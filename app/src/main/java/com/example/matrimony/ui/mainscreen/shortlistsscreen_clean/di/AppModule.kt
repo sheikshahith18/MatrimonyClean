@@ -27,12 +27,6 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideAppDatabase(application: Application): AppDatabase1 {
-        return Room.databaseBuilder(application, AppDatabase1::class.java, "app_database1").build()
-    }
-
-    @Provides
-    @Singleton
     fun provideUserRepository(db: AppDatabase): UserRepository {
         return UserRepositoryImpl(db.userDao())
     }
