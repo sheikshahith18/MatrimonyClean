@@ -61,7 +61,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideGetSettingsStatusUseCase(settingsRepository: PrivacySettingsRepository): GetSettingsUseCase {
+    fun provideGetSettingsUseCase(settingsRepository: PrivacySettingsRepository): GetSettingsUseCase {
         return GetSettingsUseCaseImpl(settingsRepository)
     }
 
