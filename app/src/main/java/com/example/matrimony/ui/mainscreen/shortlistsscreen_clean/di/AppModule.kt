@@ -3,7 +3,6 @@ package com.example.matrimony.ui.mainscreen.shortlistsscreen_clean.di
 import android.app.Application
 import androidx.room.Room
 import com.example.matrimony.db.AppDatabase
-import com.example.matrimony.ui.mainscreen.shortlistsscreen_clean.data.local.db.AppDatabase1
 import com.example.matrimony.ui.mainscreen.shortlistsscreen_clean.data.repositories.*
 import com.example.matrimony.ui.mainscreen.shortlistsscreen_clean.domain.repositories.*
 import com.example.matrimony.ui.mainscreen.shortlistsscreen_clean.domain.usecases.*
