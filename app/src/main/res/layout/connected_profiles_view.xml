@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--        xmlns:tools="http://schemas.android.com/tools"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/cv_image_holder"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="12dp"-->
+        <!--            android:layout_marginTop="12dp"-->
+        <!--            android:layout_marginEnd="12dp"-->
+        <!--            app:cardCornerRadius="10dp"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ll_profile_pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/blur_bg">
+
+                <ImageView
+                    android:id="@+id/iv_profile_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_album_count"
+                    android:layout_width="30dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/black"
+                    app:drawableTint="@color/black"
+                    android:background="@drawable/tv_background"
+                    android:gravity="center"
+                    android:paddingEnd="2dp"
+                    android:scaleX="0.8"
+                    android:scaleY=".8"
+                    android:text="8"
+                    android:paddingStart="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:drawableStartCompat="@drawable/ic_album" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Profile Name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@id/img_btn_call"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/ll_profile_pic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_profile_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Age"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/ll_profile_pic"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_name" />
+
+        <TextView
+            android:id="@+id/tv_profile_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Height"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/tv_profile_age"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_name" />
+
+        <TextView
+            android:id="@+id/tv_profile_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Education"
+            android:textSize="16sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@id/img_btn_call"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/ll_profile_pic"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_age" />
+
+        <TextView
+            android:id="@+id/tv_profile_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="16sp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toTopOf="@id/barrier"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@id/img_btn_call"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/ll_profile_pic"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_education" />
+
+
+        <ImageButton
+            android:id="@+id/img_btn_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:background="?attr/selectableItemBackground"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true"
+
+            android:layout_marginEnd="24dp"
+
+            android:src="@drawable/ic_dial_call"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/img_btn_schedule"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true"
+
+            android:layout_marginEnd="24dp"
+
+            android:src="@drawable/ic_calendar_month"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_btn_call" />
+
+
+        <ImageButton
+            android:src="@drawable/ic_remove_connection"
+            android:id="@+id/btn_remove_Connection"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:background="?attr/selectableItemBackground"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true"
+
+            app:layout_constraintTop_toBottomOf="@id/img_btn_schedule"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tv_profile_location,btn_remove_Connection" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    </androidx.cardview.widget.CardView>-->
+</layout>

@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/partner_pref_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_partner_preferences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Partner Preferences"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:padding="10sp"
+                    android:src="@drawable/ic_edit_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_basic_pref_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Basic Preferences"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_partner_preferences" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_basic_pref_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/background_rectangle_round_cornered"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_basic_pref_header">
+
+                    <TextView
+                        android:id="@+id/tv_age"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="Age"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_age"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/tv_age_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_age_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/tv_age_hyphen"
+                        android:paddingStart="12dp"
+                        android:hint="Not Set"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_age_hyphen"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.6" />
+
+                    <TextView
+                        android:id="@+id/tv_height"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_age_value"
+                        android:text="Height"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_age"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_height"
+                        app:layout_constraintTop_toBottomOf="@id/tv_age_value"
+                        android:id="@+id/tv_height_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_height_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_age_value"
+                        android:layout_toEndOf="@id/tv_age"
+                        android:paddingStart="12dp"
+                        android:hint="Not Set"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_height_hyphen"
+                        app:layout_constraintTop_toBottomOf="@id/tv_age"
+                        app:layout_constraintWidth_percent="0.6" />
+
+                    <TextView
+                        android:id="@+id/tv_marital_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_height_value"
+                        android:text="Marital Status"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_height"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_marital_status"
+                        app:layout_constraintTop_toBottomOf="@id/tv_height_value"
+                        android:id="@+id/tv_marital_status_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_marital_status_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_height_value"
+                        android:layout_toEndOf="@id/tv_age"
+                        android:paddingStart="12dp"
+                        android:hint="Not Set"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_marital_status_hyphen"
+                        app:layout_constraintTop_toBottomOf="@id/tv_height"
+                        app:layout_constraintWidth_percent="0.6" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_professional_pref_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Professional Preferences"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_basic_pref_desc" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tv_professional_pref_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/background_rectangle_round_cornered"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_professional_pref_header">
+
+                    <TextView
+                        android:id="@+id/tv_education"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="Education"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_education"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/tv_education_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_education_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/tv_education"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:paddingStart="12dp"
+                        android:hint="Not Set"
+                        android:maxLength="500"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_education_hyphen"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.6" />
+
+                    <TextView
+                        android:id="@+id/tv_employed_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_education_value"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="Employed in"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_education_value"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_employed_in"
+                        app:layout_constraintTop_toBottomOf="@id/tv_education_value"
+                        android:id="@+id/tv_employed_in_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_employed_in_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_education_value"
+                        android:layout_toEndOf="@id/tv_employed_in"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:hint="Not Set"
+                        android:paddingStart="12dp"
+                        android:maxLength="500"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_employed_in_hyphen"
+                        app:layout_constraintTop_toBottomOf="@id/tv_education_value"
+                        app:layout_constraintWidth_percent="0.6" />
+
+                    <TextView
+                        android:id="@+id/tv_occupation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_employed_in_value"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="Occupation"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_employed_in_value"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_occupation"
+                        app:layout_constraintTop_toBottomOf="@id/tv_employed_in_value"
+                        android:id="@+id/tv_occupation_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_occupation_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_employed_in_value"
+                        android:layout_toEndOf="@id/tv_occupation"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:hint="Not Set"
+                        android:paddingStart="12dp"
+                        android:maxLength="500"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_occupation_hyphen"
+                        app:layout_constraintTop_toBottomOf="@id/tv_employed_in_value"
+                        app:layout_constraintWidth_percent="0.6" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_religion_pref_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Religion Preferences"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_professional_pref_desc" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tv_religion_pref_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/background_rectangle_round_cornered"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_religion_pref_header">
+
+                    <TextView
+                        android:id="@+id/tv_religion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="Religion"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_religion"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/tv_religion_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_religion_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/tv_religion"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:hint="Not Set"
+                        android:maxLength="500"
+                        android:paddingStart="12dp"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_religion_hyphen"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.6" />
+
+                    <TextView
+                        android:id="@+id/tv_caste"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_religion_value"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="Caste"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_religion_value"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_caste"
+                        app:layout_constraintTop_toBottomOf="@id/tv_religion_value"
+                        android:id="@+id/tv_caste_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_caste_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_religion_value"
+                        android:layout_toEndOf="@id/tv_caste"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:hint="Not Set"
+                        android:paddingStart="12dp"
+                        android:maxLength="500"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_caste_hyphen"
+                        app:layout_constraintTop_toBottomOf="@id/tv_religion_value"
+                        app:layout_constraintWidth_percent="0.6" />
+
+                    <TextView
+                        android:id="@+id/tv_star"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_caste_value"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="Star"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_caste_value"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_star"
+                        app:layout_constraintTop_toBottomOf="@id/tv_caste_value"
+                        android:id="@+id/tv_star_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_star_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_caste_value"
+                        android:layout_toEndOf="@id/tv_star"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:hint="Not Set"
+                        android:paddingStart="12dp"
+                        android:maxLength="500"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_star_hyphen"
+                        app:layout_constraintTop_toBottomOf="@id/tv_caste_value"
+                        app:layout_constraintWidth_percent="0.6" />
+
+                    <TextView
+                        android:id="@+id/tv_zodiac"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_star"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="Zodiac"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_star_value"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_zodiac"
+                        app:layout_constraintTop_toBottomOf="@id/tv_star_value"
+                        android:id="@+id/tv_zodiac_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_zodiac_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_star_value"
+                        android:layout_toEndOf="@id/tv_zodiac"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:hint="Not Set"
+                        android:paddingStart="12dp"
+                        android:maxLength="500"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_zodiac_hyphen"
+                        app:layout_constraintTop_toBottomOf="@id/tv_star_value"
+                        app:layout_constraintWidth_percent="0.6" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_location_pref_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Location Preferences"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_religion_pref_desc" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tv_location_pref_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/background_rectangle_round_cornered"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_location_pref_header">
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="State"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_state"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/tv_state_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_state_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/tv_state"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:hint="Not Set"
+                        android:paddingStart="12dp"
+                        android:maxLength="500"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_state_hyphen"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.6" />
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_state_value"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:maxLength="500"
+                        android:text="City"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_state"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/tv_city"
+                        app:layout_constraintTop_toBottomOf="@id/tv_state_value"
+                        android:id="@+id/tv_city_hyphen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:text="-"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_city_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_state_value"
+                        android:layout_toEndOf="@id/tv_city"
+                        android:enabled="false"
+                        android:gravity="top|start"
+                        android:hint="Not Set"
+                        android:maxLength="500"
+                        android:paddingStart="12dp"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/tv_city_hyphen"
+                        app:layout_constraintTop_toBottomOf="@id/tv_state_value"
+                        app:layout_constraintWidth_percent="0.6" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/no_preference_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="No Preferences Were Set"
+                    android:textSize="28dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Preferred profile details will appear here" />
+
+                <TextView
+                    android:id="@+id/tv_set_preferences"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Click Here to Set Preferences"
+                    android:textColor="@color/blue" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</layout>

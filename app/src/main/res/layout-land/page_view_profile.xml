@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/view_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="My Profile">
+
+                <ImageView
+                    android:id="@+id/img_btn_edit_album"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="12dp"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_add_image"
+                    app:layout_collapseMode="parallax" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <!--            <View-->
+            <!--                android:id="@+id/divider"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:background="?android:attr/listDivider"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/toolbar" />-->
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:fitsSystemWindows="true">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:toolbarId="@+id/toolbar">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/view_pager_constraint_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/view_pager_profile_pics"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0">
+
+
+                        </androidx.viewpager2.widget.ViewPager2>
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:id="@+id/no_images"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/default_profile_pic"/>
+                        </LinearLayout>
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tab_layout_images"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:elevation="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tabBackground="@drawable/tab_selector"
+                            app:tabGravity="center"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabMaxWidth="0dp"
+                            app:tabMode="fixed" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab_shortlist"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/image_button_background"
+                            android:backgroundTint="@color/light_pink"
+                            android:src="@drawable/ic_baseline_favorite_hollow"
+                            app:fabCustomSize="30dp"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:tint="@null" />
+
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab_send_connection"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/image_button_background"
+                            android:backgroundTint="@color/light_pink"
+                            app:fabCustomSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/fab_shortlist"
+                            app:srcCompat="@drawable/ic_send_connection"
+                            app:tint="@null" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab_dial"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/image_button_background"
+                            android:backgroundTint="@color/light_pink"
+                            app:fabCustomSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/fab_send_connection"
+
+                            app:srcCompat="@drawable/ic_dial_call" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab_whatsapp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/image_button_background"
+                            android:backgroundTint="@color/light_pink"
+                            app:fabCustomSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/fab_dial"
+                            app:srcCompat="@drawable/ic_whatsapp" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab_meeting"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/image_button_background"
+                            android:backgroundTint="@color/light_pink"
+                            app:fabCustomSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/fab_whatsapp"
+
+                            app:srcCompat="@drawable/ic_calendar_month" />
+
+                        <TextView
+                            android:id="@+id/tv_page_no"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:gravity="center"
+                            android:background="@drawable/tv_background"
+                            android:layout_width="30dp"
+                            android:text="1/2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_height="20dp"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout_profile_details"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabRippleColor="@null"
+                app:tabTextAppearance="@style/TabLayoutTextAppearance" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager_profile_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tab_layout_profile_details" />
+
+            <!--            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+            <!--                android:id="@+id/extended_fab"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginEnd="10dp"-->
+            <!--                android:layout_marginBottom="16dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:backgroundTint="@color/light_pink"-->
+            <!--                app:icon="@drawable/ic_add"-->
+            <!--                app:layout_anchor="@id/collapsing_toolbar"-->
+            <!--                app:layout_anchorGravity="top|end|right"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

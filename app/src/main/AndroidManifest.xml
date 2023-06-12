@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Matrimony"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.mainscreen.homescreen.profilescreen.ViewImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mainscreen.homescreen.profilescreen.editscreen.PersonalInfoEditActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.mainscreen.homescreen.profilescreen.albumscreen.AlbumActivity" />
+        <activity android:name=".ui.mainscreen.homescreen.profilescreen.albumscreen.AlbumActivity1" />
+        <activity android:name=".ui.mainscreen.meetingscreen.ScheduleMeetingActivity" />
+        <activity android:name=".ui.mainscreen.homescreen.settingsscreen.EnterPasswordActivity" />
+        <activity android:name=".ui.mainscreen.homescreen.settingsscreen.AccountSettingsActivity" />
+        <activity android:name=".ui.mainscreen.homescreen.settingsscreen.PrivacySettingsActivity" />
+        <activity android:name=".ui.mainscreen.homescreen.settingsscreen.SettingsActivity" />
+        <activity android:name=".ui.mainscreen.searchscreen.FilterActivity" />
+        <activity android:name=".ui.SplashActivity" />
+        <activity android:name=".ui.mainscreen.homescreen.profilescreen.editscreen.PartnerPrefEditActivity" />
+        <activity android:name=".ui.mainscreen.homescreen.profilescreen.editscreen.ProfessionalInfoEditActivity" />
+        <activity android:name=".ui.mainscreen.homescreen.profilescreen.editscreen.ReligionInfoEditActivity" />
+        <activity android:name=".ui.mainscreen.homescreen.profilescreen.ViewProfileActivity" />
+        <activity android:name=".ui.mainscreen.MainActivity" />
+        <activity android:name=".ui.loginscreen.ForgotPasswordActivity" />
+        <activity android:name=".ui.loginscreen.ResetPasswordActivity" />
+        <activity android:name=".ui.loginscreen.EnterOtpActivity" />
+        <activity android:name=".ui.registerscreen.SignUpActivity" />
+        <activity android:name=".ui.registerscreen.SignUpNextPageActivity" />
+        <activity android:name=".ui.loginscreen.LoginViaOTPActivity" />
+        <activity android:name=".ui.loginscreen.SignInActivity" />
+        <activity android:name=".DemoActivity" />
+
+        <activity-alias
+            android:name=".LaunchActivity"
+            android:exported="true"
+            android:targetActivity=".ui.SplashActivity">
+            <!-- android:targetActivity=".DemoActivity"> -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+    </application>
+
+</manifest>

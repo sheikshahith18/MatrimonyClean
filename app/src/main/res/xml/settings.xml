@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="settings">
+
+
+    <Preference
+        android:icon="@drawable/ic_account_settings"
+        android:key="account_settings"
+        android:summary="Change password, delete account"
+        android:title="Account"
+        app:fragment="com.example.matrimony.ui.mainscreen.homescreen.settingsscreen.preffrag.AccountSettingsFragment" />
+
+    <Preference
+        android:icon="@drawable/ic_privacy_shield"
+        android:key="privacy_settings"
+        android:summary="Album privacy, contact privacy"
+        android:title="Privacy"
+        app:fragment="com.example.matrimony.ui.mainscreen.homescreen.settingsscreen.preffrag.PrivacySettingsFragment" />
+
+
+</PreferenceScreen>

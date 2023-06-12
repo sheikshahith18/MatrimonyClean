@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_selector"
+        app:showAsAction="always"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_search"
+        app:showAsAction="always"
+        android:icon="@drawable/search_selector"
+        android:title="Search" />
+    <item
+        android:id="@+id/nav_shortlists"
+        app:showAsAction="always"
+        android:icon="@drawable/favourite_selector"
+        android:title="Shortlisted Profiles" />
+    <item
+        android:id="@+id/nav_connections"
+        app:showAsAction="always"
+        android:icon="@drawable/requests_selector"
+        android:title="Requests" />
+
+    <item
+        android:id="@+id/nav_meetings"
+        app:showAsAction="always"
+        android:icon="@drawable/meeting_selector"
+        android:title="Meetings" />
+
+</menu>

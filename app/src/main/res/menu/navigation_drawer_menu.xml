@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_user_account"
+        app:showAsAction="always"
+        android:id="@+id/menu_my_profile"
+        android:title="My Profile" />
+    <item
+        android:icon="@drawable/favourite_selector"
+        app:showAsAction="always"
+        android:id="@+id/menu_shortlisted_profiles"
+        android:title="Shortlisted Profiles" />
+    <item
+        android:icon="@drawable/ic_request_hollow"
+        app:showAsAction="always"
+        android:id="@+id/menu_connections"
+        android:title="Connections" />
+    <item
+        android:icon="@drawable/ic_meeting"
+        app:showAsAction="always"
+        android:id="@+id/menu_meetings"
+        android:title="Meetings" />
+    <item
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"
+        android:id="@+id/menu_settings"
+        android:title="Settings" />
+    <item
+        android:icon="@drawable/ic_sign_out"
+        app:showAsAction="always"
+        android:id="@+id/menu_sign_out"
+        android:title="Sign Out" />
+</menu>

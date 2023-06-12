@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/remove_profile_pic"-->
+<!--        app:showAsAction="always"-->
+<!--        android:title="Remove Profile Pic" />-->
+    <item
+        android:id="@+id/set_profile_pic"
+        app:showAsAction="always"
+        android:title="Set as Profile Picture" />
+    <item
+        android:id="@+id/delete_picture"
+        app:showAsAction="always"
+        android:title="Delete Picture" />
+</menu>

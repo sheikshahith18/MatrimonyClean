@@ -1,0 +1,357 @@
+<resources>
+    <string name="app_name">Vivahaa</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="email_or_mobile_number">Email/Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_an_acc">Don\'t have an account?\u0020\u0020</string>
+    <string name="create_one">Create one</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="mobile_verification">Please enter your mobile number to receive a verification code</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="continue_txt">Continue</string>
+
+    <string name="dot">\u0020\u0020·\u0020\u0020</string>
+
+    <string name="lorem_ipsum_short">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat porttitor felis, vitae bibendum sem consectetur quis. Sed sed aliquam erat. Etiam at urna fringilla, tristique magna non, porttitor leo. Donec congue non velit in fermentum. Phasellus sodales accumsan lorem malesuada viverra. Fusce mollis magna a odio vulputate, id fermentum orci bibendum. Curabitur sit amet urna id tellus pretium egestas eleifend nec nunc. Fusce imperdiet, diam non sollicitudin congue, risus justo egestas leo, in accumsan velit quam vel augue. Aenean imperdiet blandit augue vitae imperdiet.
+    </string>
+    <string name="lorem_ipsum">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat porttitor felis, vitae bibendum sem consectetur quis. Sed sed aliquam erat. Etiam at urna fringilla, tristique magna non, porttitor leo. Donec congue non velit in fermentum. Phasellus sodales accumsan lorem malesuada viverra. Fusce mollis magna a odio vulputate, id fermentum orci bibendum. Curabitur sit amet urna id tellus pretium egestas eleifend nec nunc. Fusce imperdiet, diam non sollicitudin congue, risus justo egestas leo, in accumsan velit quam vel augue. Aenean imperdiet blandit augue vitae imperdiet. Aliquam eget egestas mauris, at vulputate tellus.
+
+Aenean faucibus augue et tortor malesuada, at laoreet lorem pulvinar. Praesent in porttitor nisl, ut lacinia dolor. In tincidunt porta urna at euismod. Maecenas pulvinar leo a vestibulum ultrices. Curabitur massa dolor, aliquet sed ex in, mollis auctor mi. Phasellus tristique, turpis vel efficitur efficitur, augue turpis vehicula ligula, sed commodo leo ante in urna. Nunc gravida aliquam augue, eget efficitur felis venenatis in. Donec laoreet convallis dui, vitae volutpat urna lobortis nec. Curabitur congue ligula a eros consequat, eget condimentum nibh vulputate. Donec finibus neque turpis, in tincidunt dolor cursus in. Sed placerat dapibus nisi ac pulvinar. Pellentesque vulputate iaculis metus ut laoreet. Mauris suscipit neque vel cursus scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Integer convallis et metus sit amet condimentum. Ut fermentum ligula odio, sit amet varius nunc facilisis ac. Ut tellus massa, luctus non tempus at, ultricies vel libero. Aenean tristique efficitur pulvinar. Ut nec pulvinar felis. Praesent dapibus porta turpis, ultricies rhoncus mi varius vitae. Phasellus molestie lectus in erat pretium, et venenatis nisl aliquam. Pellentesque sit amet ex nulla. Donec vestibulum vitae nunc vel facilisis.
+
+Donec vel consequat nisl. Suspendisse eu tincidunt lorem. Donec maximus consequat erat, id faucibus nisi pretium sed. In lacus eros, iaculis ac dapibus fermentum, sollicitudin eget nibh. Duis in sapien erat. Donec ut velit diam. Vivamus molestie dictum sapien. Quisque eget aliquam nibh. Nulla facilisi. Integer eros nisi, commodo et lacinia non, tincidunt id ligula.
+
+Ut sed interdum neque, vitae molestie eros. Cras blandit quam placerat sapien sodales, et convallis nisl laoreet. Sed finibus fringilla nisl nec hendrerit. Mauris egestas enim ac euismod placerat. Nulla neque urna, efficitur eu semper at, elementum a nibh. Nulla at euismod leo, non suscipit odio. Sed consequat venenatis ante, at eleifend leo ornare a. Pellentesque tristique aliquet quam in volutpat. Ut viverra efficitur libero maximus aliquam. In condimentum scelerisque dui, a blandit magna dictum eget. Mauris rhoncus vitae nulla ut viverra. Sed nec arcu vitae augue faucibus mattis sed ac nisi. Nullam sodales mi turpis, scelerisque finibus tortor lacinia id. Nunc quis odio ex. Nulla semper lectus tincidunt, condimentum sapien in, rutrum felis. Nam nec felis id velit feugiat luctus.
+
+Nam venenatis vestibulum massa, ut blandit mi mollis sed. Maecenas eleifend risus urna, at tempor nisl auctor a. Sed vitae arcu velit. Nullam lobortis quis est non interdum. Proin dignissim nunc nec velit tristique dictum. Phasellus consectetur libero sit amet semper tincidunt. Donec vel magna condimentum, mattis nisl sed, fringilla orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tempor velit vel rutrum. Donec facilisis maximus rutrum. Etiam mollis erat eget sapien facilisis, sed tincidunt ligula tristique. Ut at elit suscipit, porta velit eget, egestas purus. Nam at diam dapibus, consectetur ipsum et, vulputate lectus.
+
+Mauris ultricies arcu quis leo tempus ultrices. Donec commodo nulla sed ante molestie dignissim. Duis leo ligula, malesuada sed convallis nec, rutrum vitae magna. Proin finibus est eget malesuada eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam consequat convallis congue. Maecenas vulputate ornare leo, in interdum nisi pharetra non.
+
+Integer varius sem justo, vitae luctus massa venenatis sed. Curabitur purus massa, vestibulum sit amet feugiat in, vulputate nec ligula. Vestibulum at purus tincidunt, lobortis risus congue, pretium sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur cursus ligula quis massa dapibus pretium. Donec lacinia orci sit amet rhoncus sagittis. Curabitur sapien est, facilisis sit amet lectus ut, varius venenatis dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Integer ultricies id nibh vel pulvinar. Cras tempor molestie condimentum. Ut lectus justo, pharetra et eros quis, lacinia ultrices elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce eget mi ac nunc pellentesque commodo et ornare augue. Praesent eget euismod nunc. Sed ac lobortis dui, a condimentum ex. Vivamus rhoncus eu eros aliquet volutpat. Curabitur at vestibulum turpis. Quisque mi lectus, sollicitudin eu accumsan non, tempor vel est. Curabitur vel quam ultricies, ullamcorper dolor sed, consectetur lectus. Nullam enim nibh, semper ac scelerisque in, facilisis ornare nulla. Praesent ornare pulvinar est a viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eget arcu quis tortor varius dapibus in ac eros. Vivamus pretium scelerisque ornare.
+
+Sed ultrices mattis lorem, at lacinia orci ullamcorper nec. Proin interdum aliquet ipsum, vitae tristique nisl. Morbi nisi nibh, viverra et eros nec, sodales placerat nulla. Suspendisse feugiat est magna, vitae ornare diam vulputate ut. Suspendisse potenti. Integer ut sodales eros, vel consequat diam. Integer consequat sapien et diam hendrerit mattis sit amet id dolor. Pellentesque convallis sit amet sem quis fermentum. Vivamus lacinia ante eu gravida varius. Donec in libero vestibulum, sodales nulla et, iaculis dolor. Nulla in hendrerit purus, vel iaculis felis. Proin pretium congue dolor in pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce consequat dictum nibh, quis ullamcorper justo sagittis non.
+
+Cras quam nunc, sollicitudin nec finibus quis, auctor vel velit. Sed varius quam in ligula cursus porttitor. Phasellus est nisi, suscipit ut dolor id, consequat hendrerit velit. Suspendisse suscipit purus libero, at dapibus lacus rhoncus eu. Phasellus vel nibh a mauris dapibus dapibus vel posuere mauris. Donec commodo tincidunt felis sed euismod. Vivamus ornare nunc ut est condimentum, nec elementum leo gravida. Donec mauris nisi, aliquet id dolor id, vestibulum lacinia urna.
+
+Praesent egestas fermentum fringilla. Cras id posuere arcu. Pellentesque velit nulla, vulputate eu est vitae, accumsan ultricies enim. Mauris feugiat a urna vitae dignissim. Nullam justo lacus, laoreet at orci id, fermentum aliquam magna. Proin vel ornare metus, consequat auctor enim. Fusce sit amet neque vel ante pretium lacinia. Vestibulum vel fringilla purus. Proin et risus malesuada velit auctor faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer nec pharetra nisl. Etiam orci lectus, laoreet in sodales at, laoreet et ex. Vivamus quis odio sit amet risus sodales feugiat. Maecenas vitae tortor vitae mi aliquam fermentum vel ornare leo. Vestibulum facilisis magna ac hendrerit consectetur.
+
+Ut vel lorem purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin dignissim iaculis posuere. Cras blandit nibh eu feugiat molestie. Vivamus congue at justo eu finibus. In pellentesque, nunc sit amet viverra tristique, orci velit porta augue, nec scelerisque nulla odio eget massa. Proin at erat nec purus feugiat laoreet. Pellentesque varius, diam eu bibendum pulvinar, elit risus laoreet magna, a mattis dolor enim sit amet nunc.
+
+Quisque vitae dictum mi, vel cursus tortor. In eu augue ut elit mattis malesuada. Morbi dictum rutrum lectus, et blandit nulla ullamcorper ut. Sed et quam luctus nibh dapibus aliquam. Nulla et erat eu nulla lobortis dignissim vel nec justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis pellentesque ipsum varius sodales. Nunc tellus arcu, tempor eu nunc ut, maximus euismod odio. Donec ultrices sapien id aliquet facilisis. Maecenas vel diam sagittis, venenatis risus a, malesuada libero. Morbi sodales massa in metus euismod, ac tincidunt diam ultricies. Quisque viverra, eros ac eleifend sodales, felis felis fermentum tellus, cursus posuere magna ex non nulla.
+
+Sed nisl purus, facilisis eu commodo in, rhoncus sed augue. In ultrices nunc non congue elementum. Cras congue efficitur arcu ac pulvinar. Praesent id risus magna. Mauris enim ipsum, laoreet quis accumsan et, condimentum id nunc. Praesent bibendum metus nec purus hendrerit, in congue lacus accumsan. Suspendisse pretium faucibus turpis. Etiam a sapien a augue tempor elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse in sapien eget turpis porta porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras at congue justo, quis suscipit ex. Vestibulum est felis, fermentum sed est sit amet, ullamcorper dictum nibh. Cras pulvinar enim non tempor tempor.
+   </string>
+
+
+    <string-array name="religion">
+        <!--        <item> - Select Religion - </item>-->
+        <item>Muslim</item>
+        <item>Hindu</item>
+        <item>Christian</item>
+        <item>Atheism</item>
+    </string-array>
+
+    <string-array name="muslim_caste">
+        <!--        <item> - Select Caste - </item>-->
+        <item>Ansari</item>
+        <item>Lebbai</item>
+        <item>Hanafi</item>
+        <item>Malik</item>
+        <item>Others</item>
+        <item>Unspecified</item>
+    </string-array>
+
+    <string-array name="hindu_caste">
+        <!--        <item> - Select Caste - </item>-->
+        <item>Brahmin</item>
+        <item>Chettiyar</item>
+        <item>Gounder</item>
+        <item>Nadar</item>
+        <item>Sourashtra</item>
+        <item>Others</item>
+        <item>Unspecified</item>
+    </string-array>
+
+    <string-array name="christian_caste">
+        <!--        <item> - Select Division - </item>-->
+        <item>Adventist</item>
+        <item>Baptist</item>
+        <item>Evangelist</item>
+        <item>Latin Catholic</item>
+        <item>Roman Catholic</item>
+        <item>Others</item>
+        <item>Unspecified</item>
+    </string-array>
+
+    <string-array name="marital_status">
+        <!--        <item> - Select Status - </item>-->
+        <item>Never Married</item>
+        <item>Divorced</item>
+        <item>Widow / Widower</item>
+    </string-array>
+
+    <string-array name="count_0_to_5">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="country">
+        <!--        <item> - Select Country - </item>-->
+        <item>India</item>
+    </string-array>
+
+    <string-array name="state">
+        <!--        <item> - Select State - </item>-->
+        <item>Andhra Pradesh</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Tamilnadu</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="andhra_cities">
+        <!--        <item> - Select City - </item>-->
+        <item>Amaravati</item>
+        <item>Guntur</item>
+        <item>Nellore</item>
+        <item>Tirupati</item>
+        <item>Visakhapatnam</item>
+        <item>Vijayawada</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="karnataka_cities">
+        <!--        <item> - Select City - </item>-->
+        <item>Bangalore</item>
+        <item>Hubbali</item>
+        <item>Mangaluru</item>
+        <item>Mysore</item>
+        <item>Udupi</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="kerala_cities">
+        <!--        <item> - Select City - </item>-->
+        <item>Aluva</item>
+        <item>Cochin</item>
+        <item>Kollam</item>
+        <item>Kozhikode</item>
+        <item>Tiruvanandapuram</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="tn_cities">
+        <!--        <item> - Select City - </item>-->
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+        <item>Madurai</item>
+        <item>Ooty</item>
+        <item>Nagercoil</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="languages">
+        <!--        <item> - Select Mother Tongue - </item>-->
+        <item>Kannada</item>
+        <item>Malayalam</item>
+        <item>Sourashtra</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Urudu</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="height">
+        <!--        <item> - Select Height - </item>-->
+        <item>4 ft 6 in</item>
+        <item>4 ft 7 in</item>
+        <item>4 ft 8 in</item>
+        <item>4 ft 9 in</item>
+        <item>4 ft 10 in</item>
+        <item>4 ft 11 in</item>
+        <item>5 ft</item>
+        <item>5 ft 1 in</item>
+        <item>5 ft 2 in</item>
+        <item>5 ft 3 in</item>
+        <item>5 ft 4 in</item>
+        <item>5 ft 5 in</item>
+        <item>5 ft 6 in</item>
+        <item>5 ft 7 in</item>
+        <item>5 ft 8 in</item>
+        <item>5 ft 9 in</item>
+        <item>5 ft 10 in</item>
+        <item>5 ft 11 in</item>
+        <item>6 ft</item>
+
+    </string-array>
+
+    <string-array name="physical_status">
+        <!--        <item> - Select Physical Status - </item>-->
+        <item>Normal</item>
+        <item>Physically Challenged</item>
+    </string-array>
+
+    <string-array name="education">
+        <!--        <item> - Select Education - </item>-->
+        <item>B.Arch</item>
+        <item>B.Com</item>
+        <item>B.E</item>
+        <item>B.Tech</item>
+        <item>B.Sc</item>
+        <item>MBBS</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="employed_in">
+        <item>Government</item>
+        <item>Private</item>
+        <item>Self Employed</item>
+        <item>Not Working</item>
+    </string-array>
+
+    <string-array name="occupation">
+        <!--        <item> - Select Occupation - </item>-->
+        <item>Accountant</item>
+        <item>Doctor</item>
+        <item>Entrepreneur</item>
+        <item>Manager</item>
+        <item>Marketing Professional</item>
+        <item>Software Professional</item>
+        <item>Studying</item>
+        <item>Supervisor</item>
+        <item>Technician</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="annual_income">
+        <!--        <item> - Select Income - </item>-->
+        <item>3–4 Lakhs</item>
+        <item>4–5 Lakhs</item>
+        <item>5–6 Lakhs</item>
+        <item>6–7 Lakhs</item>
+        <item>7–8 Lakhs</item>
+        <item>8–9 Lakhs</item>
+        <item>9–10 Lakhs</item>
+        <item>Above 10 Lakhs</item>
+    </string-array>
+
+    <string-array name="family_status">
+        <!--        <item> - Select Family Status - </item>-->
+        <item>Middle Class</item>
+        <item>Upper-Middle Class</item>
+        <item>Rich</item>
+        <item>Affluent</item>
+    </string-array>
+
+    <string-array name="family_type">
+        <!--        <item> - Select Family Type - </item>-->
+        <item>Joint</item>
+        <item>Nuclear</item>
+    </string-array>
+
+    <string-array name="habits">
+        <item>Never</item>
+        <item>Occasionally</item>
+        <item>Often</item>
+    </string-array>
+
+    <string-array name="food_type">
+        <item>Vegetarian</item>
+        <item>Eggetarian</item>
+        <item>Non-Vegetarian</item>
+    </string-array>
+
+    <string-array name="hobbies">
+        <item>Acting</item>
+        <item>Dancing</item>
+        <item>Eating</item>
+        <item>Fashion</item>
+        <item>Gaming</item>
+        <item>Indoor Sports</item>
+        <item>Outdoor Sports</item>
+        <item>Pets</item>
+        <item>Reading Books</item>
+        <item>Shopping</item>
+        <item>Singing</item>
+        <item>Travelling</item>
+        <item>Workout</item>
+        <item>Writing</item>
+        <item>Yoga</item>
+    </string-array>
+
+    <string-array name="zodiac">
+        <item>None</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+    <string-array name="stars">
+        <item>None</item>
+        <item>Ashwini</item>
+        <item>Bharani</item>
+        <item>Krittika</item>
+        <item>Rohini</item>
+        <item>Mrigashira</item>
+        <item>Ardra</item>
+        <item>Punarvasu</item>
+        <item>Pushya</item>
+        <item>Ashlesha</item>
+        <item>Magha</item>
+        <item>Purva Phalguni</item>
+        <item>Uttara Phalguni</item>
+        <item>Hasta</item>
+        <item>Chitra</item>
+        <item>Swati</item>
+        <item>Vishakha</item>
+        <item>Anuradha</item>
+        <item>Jyeshtha</item>
+        <item>Mula</item>
+        <item>Purva Ashadha</item>
+        <item>Uttara Ashadha</item>
+        <item>Shravana</item>
+        <item>Dhanishta</item>
+        <item>Shatabhisha</item>
+        <item>Purva Bhadrapada</item>
+        <item>Uttara Bhadrapada</item>
+        <item>Revati</item>
+    </string-array>
+
+
+    <string-array name="privacy_entries">
+        <item>Everyone</item>
+        <item>Connections Only</item>
+    </string-array>
+
+    <string-array name="privacy_entries_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+
+</resources>
